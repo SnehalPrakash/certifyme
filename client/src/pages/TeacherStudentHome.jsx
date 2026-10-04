@@ -19,8 +19,7 @@ import DashboardLayout from '../components/common/DashboardLayout'
 import ModernFolderCard from '../components/common/ModernFolderCard'
 import FileListRow from '../components/common/FileListRow'
 import ModernUploadModal from '../components/common/ModernUploadModal'
-
-const SERVER_URL = import.meta.env.VITE_SERVER_URL
+import { SERVER_URL } from '../config'
 
 const TeacherStudentHome = () => {
   const navigate = useNavigate()

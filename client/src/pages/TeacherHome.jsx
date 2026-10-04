@@ -21,8 +21,7 @@ import ModernFolderCard from '../components/common/ModernFolderCard'
 import FileListRow from '../components/common/FileListRow'
 import StudentCredentialForm from '../components/teacher/StudentCredentialForm'
 import { departments } from '../utils/mockData'
-
-const SERVER_URL = import.meta.env.VITE_SERVER_URL
+import { SERVER_URL } from '../config'
 
 const TeacherHome = () => {
   const navigate = useNavigate()

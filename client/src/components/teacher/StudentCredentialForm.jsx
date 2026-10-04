@@ -4,9 +4,7 @@ import { departments } from '../../utils/mockData'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import toast from 'react-hot-toast'
-
-const SERVER_URL = import.meta.env.VITE_SERVER_URL
+import { SERVER_URL } from '../../config'
 
 const StudentCredentialForm = ({ onClose, onSuccess }) => {
   const navigate = useNavigate()

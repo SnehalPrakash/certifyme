@@ -4,8 +4,7 @@ import { FiMail, FiLock, FiArrowRight, FiBookmark } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import axios from 'axios'
 import toast from 'react-hot-toast'
-
-const SERVER_URL = import.meta.env.VITE_SERVER_URL
+import { SERVER_URL } from '../config'
 
 const StudentLogin = () => {
   const [email, setEmail] = useState('')
