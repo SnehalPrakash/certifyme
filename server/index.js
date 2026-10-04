@@ -46,6 +46,9 @@ const authLimiter = rateLimit({
 app.use("/student", studentRouter);
 app.use("/teacher", teacherRouter);
 
+app.get("/", (req, res) => {
+    res.json({ message: "CertifyHub API is live and running", status: "healthy" });
+});
 app.get("/test", (req, res) => { res.send("server healthy") });
 app.post("/verify", verifyTokenLogin);
 
